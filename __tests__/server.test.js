@@ -10,14 +10,15 @@ color: 'Blue',
   material: 'Jeans',
   countryOfManufacture:'Jordan',
   id:1,
-  clothId:3
+foodId:3
 };
 
 let reqBody= {
+  id:3,
   name:'Burger',
   type:'Fast Food',
   taste:'Spicy',
-  id:1
+
 };
 
 
@@ -58,7 +59,7 @@ it('should Read a list of records using GET /food', async () => {
 
 //get by id ... read by id//
 it('should Read a record using GET /food', async () => {
-  const response = await request.get('/food/1');
+  const response = await request.get('/food/3');
 
   expect(response.status).toEqual(200);
  
@@ -67,14 +68,14 @@ it('should Read a record using GET /food', async () => {
 it('should Update a record using PUT /food/:id', async () => {
 
   
-  const res = await request.put(`/food/1`).send(reqBody)
+  const res = await request.put(`/food/3`).send(reqBody)
   expect(res.status).toEqual(200)
   
   
 });
 
 it("'should Destroy a record using DELETE - food'", async () => {
-  const response = await request.delete(`/food/1`);
+  const response = await request.delete(`/food/3`);
   expect(response.status).toEqual(204);
 });
 
@@ -92,7 +93,7 @@ it("'should Destroy a record using DELETE - food'", async () => {
 it('Should Create a record using POST /clothes', async () => {
 
     const response = await request.post('/clothes').send(reqBody2);
-    console.log(response.body)
+    
     expect(response.status).toEqual(201);
 })
 

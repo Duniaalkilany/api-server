@@ -32,6 +32,13 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello World :)');
 });
 
+
+
+
+app.get('/bad', (req,res)=>{
+    throw new Error('some thing went wrong');
+});
+
 // error handlers
 app.use('*', notFoundError )// catch-all 404 handler
 app.use(errorHandler)// internal server error handler

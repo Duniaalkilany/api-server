@@ -1,6 +1,7 @@
 'use strict';
 
-const clothes= (sequalize, DataTypes) => sequalize.define('clothes', {
+const clothes= (sequalize, DataTypes) =>
+ sequalize.define('clothes', {
       color: {
             type: DataTypes.STRING,
             allowNull: false
@@ -14,11 +15,11 @@ const clothes= (sequalize, DataTypes) => sequalize.define('clothes', {
             type:DataTypes.STRING,
             allowNull: false
         },
-        clothId: {
+        foodId: {
             type: DataTypes.INTEGER,
-            allowNull: false,}
-    });
+            allowNull: false},
+        });
   
 
 
-module.exports =clothes;
+module.exports = clothes;
