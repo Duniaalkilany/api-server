@@ -6,43 +6,17 @@
  ### Heroku:
 
 https://dunia-api-server.herokuapp.com/
+
+
 https://dunia-api-server.herokuapp.com/food
+
 
 * ### Github Actions:
 
 https://github.com/Duniaalkilany/api-server/actions
 
 * ### pull request :
-https://github.com/Duniaalkilany/api-server/pull/2
-
-
-
-
-
-## Structure
-
-├── LICENSE
-├── README.md
-├── __tests__
-│   └── server.test.js
-├── index.js
-├── package-lock.json
-├── package.json
-└── src
-    ├── error-handlers
-    │   ├── 404.js
-    │   └── 500.js
-    ├── middleware
-    │   ├── logger.js
-    │   └── validator.js
-    ├── models
-    │   ├── clothes.js
-    │   ├── data-collection-class.js
-    │   └── food.js
-    ├── routes
-    │   ├── clothes.js
-    │   └── food.js
-    └── server.js
+https://github.com/Duniaalkilany/api-server/pull/3
 
 
 
