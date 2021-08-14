@@ -14,8 +14,9 @@ const food= (sequalize, DataTypes) =>  sequalize.define('food', {
             type:DataTypes.STRING,
             allowNull: false
         },
+       
     });
-
+ 
 
 
 module.exports =food ;

@@ -29,10 +29,11 @@ router.delete('/clothes/:id', deleteClothes);
   
   async function createClothes(req, res) {
     let newcloth = req.body;
-    let cloth = await clothesCollection.create(newcloth);
+    let cloth =  await  clothesCollection.create(newcloth);
     res.status(201).json(cloth);
 }
   
+
 
 
 async function updateClothes(req, res) {
